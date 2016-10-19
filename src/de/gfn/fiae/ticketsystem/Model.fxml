@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox styleClass="mainWindow" prefHeight="760" prefWidth="1024" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="27"  styleClass="menuBar" HBox.hgrow="ALWAYS">
+        <menus>
+          <Menu styleClass="text2"  mnemonicParsing="false" text="Datei">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Neu" />
+              <MenuItem mnemonicParsing="false" text="Speichern" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</HBox>
