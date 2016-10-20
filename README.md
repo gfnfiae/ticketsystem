@@ -1,3 +1,3 @@
-# TicketSystem v0.1
+# TicketSystem v1.0
 
 Start des Projektes 19.10.2016 (Stani)

@@ -1,11 +1,5 @@
 package de.gfn.fiae.ticketsystem;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -15,9 +9,9 @@ import javafx.scene.control.Label;
 
 /**
  *
- * @author RAGE <rageax@gmail.com>
+ * @author Stani
  */
-public class FXMLDocumentController implements Initializable {
+public class Controller implements Initializable {
     
     @FXML
     private Label label;
@@ -26,6 +20,10 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
+    }
+    
+    public void buttonAction(ActionEvent actionEvent){
+        System.out.println("Button!");
     }
     
     @Override

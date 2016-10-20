@@ -1,32 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox styleClass="mainWindow" prefHeight="760" prefWidth="1024" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <MenuBar prefHeight="27"  styleClass="menuBar" HBox.hgrow="ALWAYS">
-        <menus>
-          <Menu styleClass="text2"  mnemonicParsing="false" text="Datei">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Neu" />
-              <MenuItem mnemonicParsing="false" text="Speichern" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </children>
+<HBox fillHeight="false" prefHeight="760" prefWidth="1024" styleClass="mainWindow" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.gfn.fiae.ticketsystem.Controller">
+    <children>
+        <AnchorPane HBox.hgrow="ALWAYS">
+            <children>
+                <TabPane prefHeight="760.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <tabs>
+                        <Tab text="Menu 1">
+                            <content>
+                                <AnchorPane HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <TableView layoutY="6.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" HBox.hgrow="ALWAYS">
+                                            <columns>
+                                                <TableColumn prefWidth="514.0" text="Veranstaltung" />
+                                                <TableColumn prefWidth="150.0" text="Datum" />
+                                                <TableColumn minWidth="0.0" prefWidth="150.0" text="Frei Plätze" />
+                                                <TableColumn prefWidth="131.0" text="Aktion" />
+                                            </columns>
+                                            <padding>
+                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                            </padding>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Menu 2">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                        <Tab text="Menu 3">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                        <Tab text="Menu 4">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                        <Tab text="Menu 5">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </AnchorPane>
+    </children>
 </HBox>
