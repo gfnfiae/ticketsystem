@@ -1,4 +1,3 @@
-
 @author Stani
 
 # Design GUI Template Projection
