@@ -6,6 +6,9 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.cell.*?>
+<?import de.gfn.fiae.ticketsystem.*?>
 
 <HBox fillHeight="false" prefHeight="760" prefWidth="1024" styleClass="mainWindow" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.gfn.fiae.ticketsystem.Controller">
     <children>
@@ -20,13 +23,16 @@
                                         <TableView layoutY="6.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" HBox.hgrow="ALWAYS">
                                             <columns>
                                                 <TableColumn prefWidth="514.0" text="Veranstaltung" />
-                                                <TableColumn prefWidth="150.0" text="Datum" />
-                                                <TableColumn minWidth="0.0" prefWidth="150.0" text="Frei Plätze" />
-                                                <TableColumn prefWidth="131.0" text="Aktion" />
+                                                <TableColumn maxWidth="500.0" minWidth="150.0" prefWidth="150.0" text="Datum" />
+                                                <TableColumn maxWidth="500.0" minWidth="150.0" prefWidth="150.0" text="Frei Plätze" />
+                                                <TableColumn maxWidth="500.0" minWidth="150.0" prefWidth="150.0" text="Aktion" />
                                             </columns>
                                             <padding>
                                                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                                             </padding>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
                                         </TableView>
                                     </children>
                                 </AnchorPane>

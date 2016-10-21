@@ -1,6 +1,8 @@
 package de.gfn.fiae.ticketsystem;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -25,8 +27,20 @@ public class Main extends Application {
     }
 
     /**
-     * @param args the command line arguments
+     * Data als observable list 
      */
+    private ObservableList<Veranstalltung> vData = FXCollections.observableArrayList();
+    
+    public Main() {
+        vData.add(new Veranstalltung("Testveranstalltung Oper 1", "Buchen"));
+        vData.add(new Veranstalltung("Testveranstalltung Oper 2", "Buchen"));
+        vData.add(new Veranstalltung("Testveranstalltung Oper 3", "Buchen"));
+    }
+    
+    public ObservableList<Veranstalltung> getVData() {
+        return vData;
+    }
+    
     public static void main(String[] args) {
         launch(args);
     }
