@@ -1,4 +1,4 @@
-package de.gfn.fiae.ticketsystem;
+package de.gfn.fiae.ticketsystem.model;
 
 import java.net.URL;
 import java.util.ResourceBundle;

@@ -1,4 +1,4 @@
-package de.gfn.fiae.ticketsystem;
+package de.gfn.fiae.ticketsystem.model;
 
 import java.time.LocalDate;
 import javafx.beans.property.IntegerProperty;

@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.*?>
 <?import javafx.scene.control.cell.*?>
-<?import de.gfn.fiae.ticketsystem.*?>
 
-<HBox fillHeight="false" prefHeight="760" prefWidth="1024" styleClass="mainWindow" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.gfn.fiae.ticketsystem.Controller">
+
+<HBox fillHeight="false" prefHeight="760" prefWidth="1024" styleClass="mainWindow" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.gfn.fiae.ticketsystem.model.Controller">
     <children>
         <AnchorPane HBox.hgrow="ALWAYS">
             <children>
